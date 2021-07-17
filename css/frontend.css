@@ -70,6 +70,7 @@ body {
 }
 
 .main {
+  margin-top: 70px;
   height: 170px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
