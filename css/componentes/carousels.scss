@@ -3,6 +3,9 @@
     overflow: scroll;
     padding: 30px;
     position: relative;
+    span {
+        color: $color-claro;
+    }
     &__container {
         white-space: nowrap;
         margin: 70px 0px;
