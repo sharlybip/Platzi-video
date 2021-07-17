@@ -1,0 +1,25 @@
+mixin item(imagen1, alt1)
+    .carousel-item
+        img(class="carousel-item__img", src="../images/"+imagen1, alt="imagen de "+alt1)
+        .carousel-item__details
+            div
+                img(src="../images/play.png", alt="play")
+                img(src="../images/mas.png", alt="mas")
+            p.carousel-item__details--title Titulo descriptivo
+            p.carousel-item__details--subtitle 2019 16+ 114minutos
+
+
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../css/frontend.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;600&display=swap" rel="stylesheet")
+    body
+    block contenidos

@@ -1,0 +1,17 @@
+$Fuente1: 'Mulish', sans-serif;
+$color-claro: #ffffff;
+$color-primario: #8f57fd;
+
+
+
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $color-primario;
+    font-family: $Fuente1;
+}
