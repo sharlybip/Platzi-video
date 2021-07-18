@@ -282,10 +282,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 10px;
 }
 .login__container--remember-me span {
-  margin-left: 5px;
+  margin: 0px 6px;
+  font-size: 16px;
 }
 .login__container--remember-me a {
   color: #ffffff;

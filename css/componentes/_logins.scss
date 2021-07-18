@@ -30,9 +30,11 @@
         color: $color-claro;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 10px;
         span {
-            margin-left: 5px;
+            margin: 0px 6px;
+            font-size: 16px;
         }
     }
     &__container--remember-me a {
