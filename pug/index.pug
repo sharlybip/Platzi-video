@@ -1,15 +1,6 @@
 extend componentes/head.pug
 block contenidos
-    header(class="header")
-        img(class="header__img" src='../images/logo-platzi-video-BW2.png')
-        .header__menu
-            .header__menu--profile
-                img(src="../images/icons8-usuario-30.png", alt="")
-                p Perfil
-            .lista
-                ul
-                    li: a(href="/") Cuenta
-                    li: a(href="/") Cerrar sesión
+    +header('purpura')
     section(class="main")
         h2(class="main__title") ¿Qué quieres ver hoy?
         input(class="input", type="text", placeholder="Buscar...")

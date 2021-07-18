@@ -7,10 +7,17 @@ mixin item(imagen1, alt1)
                 img(src="../images/mas.png", alt="mas")
             p.carousel-item__details--title Titulo descriptivo
             p.carousel-item__details--subtitle 2019 16+ 114minutos
-
-
-
-
+mixin header(color)
+    header(class="header header__"+color)
+        img(class="header__img" src='../images/logo-platzi-video-BW2.png')
+        .header__menu
+            .header__menu--profile
+                img(src="../images/icons8-usuario-30.png", alt="")
+                p Perfil
+            .lista
+                ul
+                    li: a(href="/") Cuenta
+                    li: a(href="/") Cerrar sesión
 doctype html
 html(lang="en")
     head

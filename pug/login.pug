@@ -1,0 +1,28 @@
+extend componentes/head.pug
+block contenidos
+    +header('verde')
+    section.login
+        section.login__container 
+            h2 Inicia sesión
+            form.login__container--form
+                input.input__login(type="text", placeholder="Correo")
+                input.input__login(type="password", placeholder="Contarseña")
+                button.button Iniciar sesión
+                .login__container--remember-me
+                    label
+                        input(type="checkbox", name="", id="cbox1",value="Checkbox")
+                        span Recuerdame
+                    a(href="/") Olvidé mi contraseña
+            section.login__container--social-media
+                div
+                    img(src="../images/icons8-logo-de-google-30.png", alt="Google") 
+                    span Inicia sesión con Google
+                div
+                    img(src="../images/icons8-twitter-30.png", alt="Google") 
+                    span Inicia sesión con twitter
+            p.login__container--register No tiene una cuenta
+                a(href="") Regístrate
+    footer.footer
+        a(href="/") Terminos de uso
+        a(href="/") Declaración de privacidad
+        a(href="/") Centro de ayuda
