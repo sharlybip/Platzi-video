@@ -38,6 +38,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.header__verde .header__menu--profile {
+  display: none;
+}
 
 .header__img {
   margin-top: 3px;
@@ -316,14 +319,14 @@ body {
 .login__container--register {
   font-size: 14px;
 }
-.login__container--register a {
+.login__container--register-link, .iniciar-sesion {
   font-size: 17px;
   text-decoration: none;
   color: #ffffff;
   margin-left: 5px;
   font-weight: bold;
 }
-.login__container--register a:hover {
+.login__container--register-link:hover, .iniciar-sesion:hover {
   text-decoration: underline;
 }
 
@@ -386,4 +389,9 @@ body {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+.iniciar-sesion {
+  display: inline-block;
+  margin: 0 auto;
 }

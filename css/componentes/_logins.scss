@@ -58,14 +58,14 @@
     &__container--register {
         font-size: 14px;
     }
-    &__container--register a {
+    &__container--register-link {
         font-size: 17px;
         text-decoration: none;
         color: $color-claro;
         margin-left: 5px;
         font-weight: bold;
     }
-    &__container--register a:hover {
+    &__container--register-link:hover {
         text-decoration: underline;
     }
 }
@@ -116,4 +116,9 @@
     a:hover {
         text-decoration: underline;
     }
+}
+.iniciar-sesion {
+    display: inline-block;
+    margin: 0 auto;
+    @extend .login__container--register-link
 }

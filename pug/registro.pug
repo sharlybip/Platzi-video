@@ -1,0 +1,14 @@
+extend componentes/head.pug
+block contenidos
+    +header('verde')
+    section.login
+        section.login__container 
+            h2 Regístrate
+            form.login__container--form
+                +input('text', 'Nombre')
+                +input('text', 'Correo')
+                +input('password','Contraseña')
+                +boton('#', 'Registrarme') 
+            a.iniciar-sesion(href="") Iniciar Sesión
+    +footer           
+                

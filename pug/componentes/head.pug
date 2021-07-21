@@ -18,6 +18,15 @@ mixin header(color)
                 ul
                     li: a(href="/") Cuenta
                     li: a(href="/") Cerrar sesión
+mixin input(type, placeholder)
+    input.input__login(type=""+type, placeholder=""+placeholder)
+mixin boton(link, texto)
+    a.button(href="../html/"+link)=texto
+mixin footer
+    footer.footer
+        a(href="/") Terminos de uso
+        a(href="/") Declaración de privacidad
+        a(href="/") Centro de ayuda
 doctype html
 html(lang="en")
     head

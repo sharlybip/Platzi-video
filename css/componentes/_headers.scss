@@ -5,6 +5,9 @@
 .header__verde {
     background-color: $color-secundario;
     @include header-properties;
+    .header__menu--profile {
+        display: none;
+    }
 }
 .header__img {
     margin-top: 3px;

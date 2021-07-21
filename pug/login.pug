@@ -5,9 +5,9 @@ block contenidos
         section.login__container 
             h2 Inicia sesión
             form.login__container--form
-                input.input__login(type="text", placeholder="Correo")
-                input.input__login(type="password", placeholder="Contarseña")
-                a.button(href="../html/index.html") Iniciar sesión
+                +input('text', 'Correo')
+                +input('password','Contraseña')
+                +boton('index.html', 'Iniciar Sesión')
                     
                 
                 .login__container--remember-me
@@ -23,8 +23,5 @@ block contenidos
                     img(src="../images/icons8-twitter-30.png", alt="Google") 
                     span Inicia sesión con twitter
             p.login__container--register No tiene una cuenta
-                a(href="") Regístrate
-    footer.footer
-        a(href="/") Terminos de uso
-        a(href="/") Declaración de privacidad
-        a(href="/") Centro de ayuda
+                a.login__container--register-link(href="") Regístrate
+   
