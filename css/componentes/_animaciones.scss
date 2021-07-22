@@ -1,0 +1,46 @@
+.log-404 {
+    background: linear-gradient($color-secundario, $color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    height: 400px;
+    min-width: 30%;
+    &__container {
+        background-color: get-opacity($color-claro, .1);
+        border: 2px solid $color-claro;
+        border-radius: 40px;
+        color: $color-claro;
+        padding: 60px 68px 40px;
+        min-height: 300px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+.text {
+    text-align: center;
+    margin-top: 56px;
+    color: #fff;
+    font-size: 1.0em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+  
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+}
