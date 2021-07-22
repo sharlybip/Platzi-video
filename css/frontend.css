@@ -11,6 +11,18 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+@media only screen and (max-width: 768px) {
+  .pricipal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .header__purpura {
   background-color: #8f57fd;
   width: 100%;
@@ -154,18 +166,26 @@ body {
   color: #ffffff;
 }
 
-/*::-webkit-scrollbar{
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
     display: none;
-}*/
+  }
+}
+.title {
+  color: #ffffff;
+  font-size: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .title {
+    margin: 0 auto;
+  }
+}
+
 .carousel {
   width: 100%;
   overflow: scroll;
   padding: 30px;
   position: relative;
-}
-.carousel h2 {
-  color: #ffffff;
-  font-size: 25px;
 }
 .carousel__container {
   white-space: nowrap;
@@ -407,9 +427,9 @@ body {
   }
 
   .footer {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -1,25 +1,26 @@
 extend componentes/head.pug
 block contenidos
-    +header('verde')
-    section.login
-        section.login__container 
-            h2(tabindex="0") Inicia sesión
-            form.login__container--form
-                +input('text', 'Correo')
-                +input('password','Contraseña')
-                +boton('index.html', 'Iniciar Sesión')
-                .login__container--remember-me
-                    label
-                        input(type="checkbox", name="", id="cbox1",value="Checkbox")
-                        span Recuerdame
-                        a(href="./not-found.html") Olvidé mi contraseña
-            section.login__container--social-media
-                div
-                    img(src="../images/icons8-logo-de-google-30.png", alt="Google") 
-                    span Inicia sesión con Google
-                div
-                    img(src="../images/icons8-twitter-30.png", alt="Google") 
-                    span Inicia sesión con twitter
-            p.login__container--register No tiene una cuenta
-                a.login__container--register-link(href="./registro.html") Regístrate
-    +footer
+    body
+        +header('verde')
+        section.login
+            section.login__container 
+                h2(tabindex="0") Inicia sesión
+                form.login__container--form
+                    +input('text', 'Correo')
+                    +input('password','Contraseña')
+                    +boton('index.html', 'Iniciar Sesión')
+                    .login__container--remember-me
+                        label
+                            input(type="checkbox", name="", id="cbox1",value="Checkbox")
+                            span Recuerdame
+                            a(href="./not-found.html") Olvidé mi contraseña
+                section.login__container--social-media
+                    div
+                        img(src="../images/icons8-logo-de-google-30.png", alt="Google") 
+                        span Inicia sesión con Google
+                    div
+                        img(src="../images/icons8-twitter-30.png", alt="Google") 
+                        span Inicia sesión con twitter
+                p.login__container--register No tiene una cuenta
+                    a.login__container--register-link(href="./registro.html") Regístrate
+        +footer

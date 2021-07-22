@@ -1,12 +1,16 @@
+
+.title {
+    color: $color-claro;
+    font-size: 25px;
+    @include media(mobile-only){
+        margin: 0 auto;
+    }
+}
 .carousel {
     width: 100%;
     overflow: scroll;
     padding: 30px;
     position: relative;
-    h2 {
-        color: $color-claro;
-        font-size: 25px;
-    }
     &__container {
         white-space: nowrap;
         margin: 70px 0px;

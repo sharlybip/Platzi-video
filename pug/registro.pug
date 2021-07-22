@@ -1,13 +1,14 @@
 extend componentes/head.pug
 block contenidos
-    +header('verde')
-    section.login
-        section.login__container 
-            h2 Regístrate
-            form.login__container--form
-                +input('text', 'Nombre')
-                +input('text', 'Correo')
-                +input('password','Contraseña')
-                +boton('./not-found.html', 'Registrarme') 
-            a.iniciar-sesion(href="./login.html") Iniciar Sesión
-    +footer
+    body
+        +header('verde')
+        section.login
+            section.login__container 
+                h2 Regístrate
+                form.login__container--form
+                    +input('text', 'Nombre')
+                    +input('text', 'Correo')
+                    +input('password','Contraseña')
+                    +boton('./not-found.html', 'Registrarme') 
+                a.iniciar-sesion(href="./login.html") Iniciar Sesión
+        +footer

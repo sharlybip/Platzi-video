@@ -30,6 +30,8 @@
 ::placeholder {
     color: $color-claro;
 }
-/*::-webkit-scrollbar{
-    display: none;
-}*/
+@media only screen and (min-width: 768px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}

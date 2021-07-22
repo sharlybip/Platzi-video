@@ -22,3 +22,10 @@ body{
     background-color: $color-primario;
     font-family: $Fuente1;
 }
+
+.pricipal{
+    @include media(mobile-only){
+        display: flex;
+        flex-direction: column;
+    }
+}

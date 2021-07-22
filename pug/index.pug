@@ -1,27 +1,28 @@
 extend componentes/head.pug
 block contenidos
-    +header('purpura')
-    section(class="main")
-        h2(class="main__title") ¿Qué quieres ver hoy?
-        input(class="input", type="text", placeholder="Buscar...")
-    section(class="carousel")
-        h2 Listas
-        .carousel__container
-            +item('edificios.jpg','cielo')
-            +item('erase.jpg','libreta')
-            +item('her.jpg','alberca')
-            +item('street.jpg','tijeras')
-            +item('montain.jpg','montañas')
-            +item('flowers.jpg','flores')
-            +item('street&building.jpg','edificio nordico')
-    section(class="carousel")
-        h2 Recomendado
-        .carousel__container
-            +item('bluetooth.jpg','cielo')
-            +item('italy.jpg','libreta')
-            +item('mask.jpg','alberca')
-            +item('plane.jpg','tijeras')
-            +item('stars.jpg','montañas')
-            +item('whale.jpg','flores')
-            +item('sicsors.jpg','edificio nordico')
-    +footer
+    body.pricipal
+        +header('purpura')
+        section(class="main")
+            h2(class="main__title") ¿Qué quieres ver hoy?
+            input(class="input", type="text", placeholder="Buscar...")
+        h2.title Listas
+        section(class="carousel")
+            .carousel__container
+                +item('edificios.jpg','cielo')
+                +item('erase.jpg','libreta')
+                +item('her.jpg','alberca')
+                +item('street.jpg','tijeras')
+                +item('montain.jpg','montañas')
+                +item('flowers.jpg','flores')
+                +item('street&building.jpg','edificio nordico')
+        h2.title Recomendado
+        section(class="carousel")
+            .carousel__container
+                +item('bluetooth.jpg','cielo')
+                +item('italy.jpg','libreta')
+                +item('mask.jpg','alberca')
+                +item('plane.jpg','tijeras')
+                +item('stars.jpg','montañas')
+                +item('whale.jpg','flores')
+                +item('sicsors.jpg','edificio nordico')
+        +footer

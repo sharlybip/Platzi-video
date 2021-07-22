@@ -6,7 +6,7 @@ mixin item(imagen1, alt1)
                 img(src="../images/play.png", alt="play")
                 img(src="../images/mas.png", alt="mas")
             p.carousel-item__details--title Titulo descriptivo
-            p.carousel-item__details--subtitle 2019 16+ 114minutos
+            p.carousel-item__details--subtitle 2019 16+ 114 minutos
 mixin header(color)
     header(class="header header__"+color)
         img(tabindex="0",class="header__img" src='../images/logo-platzi-video-BW2.png')
@@ -21,7 +21,7 @@ mixin header(color)
 mixin input(type, placeholder)
     input.input__login(type=""+type, placeholder=""+placeholder)
 mixin boton(link, texto)
-    a.button(href="./"+link)=texto
+    a.button(href=""+link)=texto    
 mixin footer
     footer.footer
         a(href="./not-found.html") Terminos de uso
@@ -37,5 +37,4 @@ html(lang="es")
         link(rel="stylesheet", href="../css/frontend.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;600&display=swap" rel="stylesheet")
-    body
     block contenidos
