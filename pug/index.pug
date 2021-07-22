@@ -5,7 +5,7 @@ block contenidos
         h2(class="main__title") ¿Qué quieres ver hoy?
         input(class="input", type="text", placeholder="Buscar...")
     section(class="carousel")
-        span Listas
+        h2 Listas
         .carousel__container
             +item('edificios.jpg','cielo')
             +item('erase.jpg','libreta')
@@ -15,7 +15,7 @@ block contenidos
             +item('flowers.jpg','flores')
             +item('street&building.jpg','edificio nordico')
     section(class="carousel")
-        span Recomendado
+        h2 Recomendado
         .carousel__container
             +item('bluetooth.jpg','cielo')
             +item('italy.jpg','libreta')
@@ -24,3 +24,4 @@ block contenidos
             +item('stars.jpg','montañas')
             +item('whale.jpg','flores')
             +item('sicsors.jpg','edificio nordico')
+    +footer

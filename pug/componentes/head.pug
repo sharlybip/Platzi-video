@@ -9,31 +9,31 @@ mixin item(imagen1, alt1)
             p.carousel-item__details--subtitle 2019 16+ 114minutos
 mixin header(color)
     header(class="header header__"+color)
-        img(class="header__img" src='../images/logo-platzi-video-BW2.png')
+        img(tabindex="0",class="header__img" src='../images/logo-platzi-video-BW2.png')
         .header__menu
             .header__menu--profile
                 img(src="../images/icons8-usuario-30.png", alt="")
                 p Perfil
             .lista
                 ul
-                    li: a(href="/") Cuenta
-                    li: a(href="/") Cerrar sesión
+                    li: a(href="./not-found.html") Cuenta
+                    li: a(href="./login.html") Cerrar sesión
 mixin input(type, placeholder)
     input.input__login(type=""+type, placeholder=""+placeholder)
 mixin boton(link, texto)
-    a.button(href="../html/"+link)=texto
+    a.button(href="./"+link)=texto
 mixin footer
     footer.footer
-        a(href="/") Terminos de uso
-        a(href="/") Declaración de privacidad
-        a(href="/") Centro de ayuda
+        a(href="./not-found.html") Terminos de uso
+        a(href="./not-found.html") Declaración de privacidad
+        a(href="./not-found.html") Centro de ayuda
 doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title Platzi Video
         link(rel="stylesheet", href="../css/frontend.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;600&display=swap" rel="stylesheet")

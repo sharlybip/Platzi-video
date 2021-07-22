@@ -122,3 +122,15 @@
     margin: 0 auto;
     @extend .login__container--register-link
 }
+@media only screen and (max-width: 600px){
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
